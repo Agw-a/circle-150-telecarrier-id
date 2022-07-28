@@ -1,19 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phonie App</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+
+
+  <div class="container">
+    <div class="top-bar">
+      <h4>Phonie</h4>
+    </div>
+    <div class="content">
+      <div class="input-card">
+        <form id='form' name='form'>
+          <div id="number">
+            <label for="name" id="name">Name:</label>
+            <div id="input">
+              <input type="tel" placeholder="name" id="phone" name="phone" title="name"><br>
+              <label for="phone" id="number-label">Phone Number:</label>
+              <div id="input">
+                <input type="tel" placeholder="+234******" id="phone" name="phone" autocomplete="off"
+                  pattern="^[0-9\-\+]{7,14}" list="air"
+                  title="Phone number must contain only digits and symbols in the format +234********** with a minimum of 6 digits">
+
+                <datalist id="air">
+                  <option id="option1">+234810</option>
+                  <option id="option2">+234806</option>
+                  <option id="option3">+234706</option>
+                  <option id="option4">+234903</option>
+                  <option id="option5">+234703</option>
+                  <option id="option6">+234803</option>
+                  <option id="option7">+234813</option>
+                  <option id="option8">+234814</option>
+                  <option id="option9">+234816</option>
+                </datalist>
+              </div>
+              <br>
+              <p id="Instruction">Enter phone number and click on validate to verify service provider</p>
+
+
+            </div>
+            <div id="button-holder">
+              <input type="submit" value="Validate" id="val">
+              <input type="reset" value="Reset">
+            </div>
+
+        </form>
+        <div class="icon-JS" id="icon">
+          Pop up icon
+        </div>
+      </div>
+
+    </div>
+    <div class="copy">
+      <p>&copy; Circle 150, 2022 AltSchool Africa Hackathon</p>
+    </div>
+  </div>
+
+
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>

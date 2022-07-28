@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-rows: 40px 600px 20px;
+}
+.top-bar{
+    background-color: #6E85B7;
+}
+.top-bar h4{
+    padding: 8px;
+  bottom: 0;
+  left: 0;
+
+}
+
+.content{
+    background-color: #E5E5E5;
+}
+.input-card{
+    border-radius: 20px;
+    background-color: #C4D7E0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*height: 50%;*/
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 80%;
+
+  
+}
+#number{
+    /* background-color: aqua; */
+    padding: 20px;
+}
+#number-label{
+    font-size: 15px;
+}
+
+#button-holder{
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#button-holder input[type=submit]{
+    background-color: #6E85B7;
+    width: 40%;
+    padding: 8px;
+    background: #6E85B7;
+    border: none;
+/* box-shadow: 0px 4px 0px #000000; */
+border-radius: 20px;
+    
+}
+#button-holder input[type=submit]:hover{
+    box-shadow: 0px 4px 0px #000000;
+    background-color: #C4D7E0;
+}
+#button-holder input[type=reset]{
+    /* background-color: #6E85B7; */
+    width: 40%;
+    border: 1px solid #6E85B7;
+border-radius: 20px;
+
+}
+#button-holder input[type=reset]:hover{
+    border: 2px solid #6E85B7
+}
+#input{
+    align-items: center;
+}
+#input input[type=tel]{
+    padding: 12px;
+    width: 80%;
+    display: inline-block;
+    border: 1px solid #6E85B7;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #d0d6e4;
+
+}
+#input input[type=text]:focus{
+    border: 2px solid #6E85B7;
+}
+#Instruction{
+    font-size: 12px;
+}
+.icon-JS{
+    background-color: #6E85B7;
+    margin: 20px;
+    padding: 10px;
+    width: 60%;
+    border-radius: 8px;
+    position: absolute;
+    left: 20%;
+}
+
+@media only screen and (max-width:700px){
+    .input-card{
+        height:80%;
+        width:80%;
+    }
+    #Instruction{
+        font-size: 14px;
+    }
+    #button-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    #button-holder input[type=submit] {
+        width: 80%;
+        margin-bottom: 10px;
+
+
+    }
+    #button-holder input[type=reset]{
+        width: 80%;
+        height: 30px;
+    }
+
+
+    
+}
