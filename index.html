@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,700,600&display=swap" rel="stylesheet">
   <title>Phonie App</title>
 
   <link rel="stylesheet" href="style.css">
@@ -17,6 +18,11 @@
     <div class="top-bar">
       <h4>Phonie</h4>
     </div>
+    <div class="intro-txt">
+      <h3>Phohie App...</h3
+      <p>Determine your tele-carrier </p>
+      
+    </div>
     <div class="content">
       <div class="input-card">
         <form id='form' name='form'>
@@ -24,8 +30,10 @@
             <label for="name" id="name">Name:</label>
             <div id="input">
               <input type="tel" placeholder="name" id="phone" name="phone" title="name"><br>
-              <label for="phone" id="number-label">Phone Number:</label>
+
+            </div>
               <div id="input">
+                <label for="phone" id="number-label">Phone Number:</label>
                 <input type="tel" placeholder="+234******" id="phone" name="phone" autocomplete="off"
                   pattern="^[0-9\-\+]{7,14}" list="air"
                   title="Phone number must contain only digits and symbols in the format +234********** with a minimum of 6 digits">
@@ -44,24 +52,21 @@
               </div>
               <br>
               <p id="Instruction">Enter phone number and click on validate to verify service provider</p>
-
-
-            </div>
             <div id="button-holder">
               <input type="submit" value="Validate" id="val">
-              <input type="reset" value="Reset">
+              <input type="reset"value="Reset"onclick=window.location.reload();>
             </div>
 
         </form>
         <div class="icon-JS" id="icon">
-          Pop up icon
+         Identify your network!!!
         </div>
       </div>
 
     </div>
-    <div class="copy">
+<!--     <div class="copy">
       <p>&copy; Circle 150, 2022 AltSchool Africa Hackathon</p>
-    </div>
+    </div> -->
   </div>
 
 

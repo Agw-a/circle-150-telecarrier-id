@@ -4,12 +4,11 @@ function startApp() {
   // so create and use/call additional functions from here
 
   // pls remove the below and make some magic in here!
-// const reset=document.getElementById('');
-  // reset.onclick=window.l
+// const reset=document.getElementById('reset');
+//   reset.onclick=window.location.reload();
   const val = document.getElementById('val');
   val.onclick = function(e) {
     e.preventDefault();
-
     const phone = document.getElementById("phone");
     if (String(phone.value).length < 7) {
 
